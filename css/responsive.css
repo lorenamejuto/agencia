@@ -1,0 +1,238 @@
+@media (max-width: 1300px) {
+  main {
+    background-size: cover;
+  }
+}
+@media (max-width: 991px) {
+  main .celular {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .desktop-992-view {
+    display: none;
+  }
+  .tablet-view {
+    display: block;
+  }
+  .clientes div {
+  padding-bottom: 20px;
+  }
+  .contacto .formulario:before {
+    display: none
+  }
+  .contacto .formulario {
+    padding-top: 50px;
+  }
+  .instagram_gallery img {
+    width: 32% !important;
+    margin: 0 !important;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .frase-principal h1{
+    font-size: 55px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  body {
+  	font-size: 14px;
+  }
+  .mobile-view {
+    display: block;
+  }
+  .desktop-view {
+    display: none !important;
+  }
+  h1 {
+    font-size: 55px;
+  }
+  header article {
+    text-align: left;
+  }
+  header article > a img {
+    margin-left: 0;
+  }
+  header .redes-sociales {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav li {
+    width: 100%;
+  }
+  footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  footer article {
+    flex-direction: column;
+  }
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer nav a {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  main {
+    text-align: center;
+  }
+  .celular img {
+    margin: 0 auto;
+  }
+  h1 .frase-principal h1 {
+    font-size: 30px;
+    margin-right: 0;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  hr {
+    margin: 20px 0;
+  }
+  .btn-email {
+    bottom: 110px;
+    width: 50px;
+    height: 50px;
+    top: inherit;
+  }
+  .btn-email img, .btn-wp img {
+    max-width: 27px;
+  }
+  .btn-wp {
+    bottom: 175px;
+    width: 50px;
+    height: 50px;
+    top: inherit;
+  }
+  .texto-nosotros {
+    margin-bottom: 40px;
+  }
+  .nosotros .mision, .nosotros .vision {
+    position: relative;
+    justify-content: center;
+  }
+  .nosotros aside {
+    position: absolute;
+    top: 95px;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: 217px;
+    box-sizing: border-box;
+  }
+  .nosotros article {
+    width: 100%;
+    padding: 0 20px 60px 20px;;
+    text-align: center;
+  }
+  .nosotros article p {
+    margin-top:  250px;
+  }
+  .seguinos {
+  	padding-top: 100px;
+  }
+  .instagram-carrousel {
+    padding: 100px 0;
+  }
+  .nuestros-clientes {
+  	padding-top: 100px;
+  }
+  .imagenes li {
+    width: 50%;
+  }
+  .portfolio-contenido article {
+    order: 2;
+  }
+  .portfolio-contenido aside {
+    order: 1;
+  }
+  .portfolio-contenido aside img {
+    margin: 40px 0;
+  }
+  .volver {
+    right: 15px;
+    font-size: 13px
+  }
+  .portfolio-contenido aside p, .portfolio-contenido aside h3, .portfolio-contenido article p, .portfolio-contenido article h3 {
+    padding: 0;
+  }
+  .portfolio-contenido aside hr, .portfolio-contenido article hr
+  {
+    margin-left: 0;
+  }
+  .contacto {
+    padding-top: 110px;
+  }
+  .instagram-carrousel {
+    padding: 110px 0 80px 0;
+  }
+}
+
+@media (max-width: 567px) {
+  h1, .frase-principal h1 {
+    font-size: 28px;
+  }
+  header .boton-menu {
+    margin-top: 12px;
+  }
+  header nav {
+    top: 72px;
+  }
+  header .boton-menu.open-menu {
+    margin-top: 21px;
+  }
+  header article > a img {
+    max-width: 200px;
+  }
+  main {
+    overflow: hidden;
+    background: rgb(147,6,161);
+    background: linear-gradient(180deg, rgba(147,6,161,1) 0%, rgba(26,9,136,1) 100%);
+  }
+  main > img {
+    left: -160px;
+    width: 745px;
+    max-width: inherit;
+  }
+  .instagram_gallery img {
+    width: 48% !important;
+    margin: 0 !important;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .datos div {
+    margin-right: 0;
+  }
+  .contacto .datos {
+    padding-left: 0;
+  }
+  form {
+    padding: 10px;
+    margin: 20px 0;
+  }
+  .siguiente {
+    display: none;
+  }
+  .portfolio.contacto {
+    display: none;
+  }
+  .portfolio-contenido article, .portfolio-contenido aside {
+    padding: 0 15px;
+  }
+  .frase-principal {
+    top: calc(50% + 76px);
+  }
+  .fondo-imagen img {
+    padding-top: 76px;
+  }
+  .clientes img {
+    padding: 10px 20px;
+  }
+}
