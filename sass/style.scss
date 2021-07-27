@@ -1,5 +1,8 @@
+@import 'utils/buttons.scss';
 @import 'portfolio.scss';
 @import 'header-footer.scss';
+@import 'utils/variables.scss';
+@import 'utils/text.scss';
 
 
 html {
@@ -16,18 +19,6 @@ html {
     list-style: none;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-}
-
-a {
-    text-decoration: none;
-    &:hover {
-        text-decoration: none;
-        }
-}
-
 input:focus, textarea:focus, button:focus, a:focus {
     outline: none;
 }
@@ -35,9 +26,8 @@ input:focus, textarea:focus, button:focus, a:focus {
 figure {
     margin: 0;
 }
-
 img {
-    max-width: 100%
+    max-width: 100%;
 }
 
 span {
@@ -48,79 +38,11 @@ section {
     background-color: #fff;
 }
 
-p {
-    line-height: 27px;
-}
-
 ul {
     margin-bottom: 0;
 }
 
 /*Titulo main*/
-h1 {
-    font-size: 65px;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 4.3px;
-}
-
-h2 {
-    font-size: 45px;
-    font-weight: 700;
-    color: #18097D;
-    letter-spacing: 3px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #18097D;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-h4 {
-    color: #393939;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-}
-
-h5 {
-    font-size: 20px;
-    font-weight: 700;
-    color: #18097d;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-hr {
-    width: 64px;
-    height: 3px;
-    background-color: #ED0677;
-    display: inline-block;
-    margin: 45px 0;
-}
-
-.btn-primario {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    background-color: #ff16aa;
-    display: inline-block;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 36px;
-    border-style: none;
-    padding: 13px 40px;
-
-    &:hover {
-    color: #fff;
-    background-color: #8a26e2;
-    }
-}
 
 .mobile-view, .tablet-view {
     display: none;
@@ -130,41 +52,6 @@ hr {
     text-align: center;
     padding-top: 80px;
 }
-
-/*Boton flotante*/
-.btn-wp, .btn-email {
-    position: fixed;
-    z-index: 9;
-    right: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-}
-.btn-wp {
-    top: 130px;
-    background-color: #00D369;
-    &:hover {
-        background-color: #04bd60;
-        }
-}
-
-.btn-email {
-top: 225px;
-background-color: #0F0596;
-}
-.btn-email:hover {
-background-color: #0f0686;
-}
-.btn-wp:hover, .btn-email:hover {
--webkit-box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
--moz-box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
-box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
-}
-/*Fin de Boton Flotante*/
 
 /*Main*/
 main {
@@ -295,18 +182,18 @@ z-index: 5;
     z-index: 3;
 }
 
-
-
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #fff;
     font-weight: 700;
     background-color: inherit;
 }
+
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
     color: rgba(255, 255, 255, .7);
     font-weight: 700;
     letter-spacing: 2px;
 }
+
 .nav-tabs {
     .nav-link {
         border: 0;
@@ -389,22 +276,19 @@ z-index: 5;
 }
 
 .cuadro-servicios ul:after, .cuadro-servicios ul:before {
-position: absolute;
-content: "";
-background: #fff;
-height: 8px;
-width: 3px;
+    position: absolute;
+    content: "";
+    background: #fff;
+    height: 8px;
+    width: 3px;
 left: -2px;
 }
 .cuadro-servicios ul:before {
-top: 0;
+    top: 0;
 }
 .cuadro-servicios ul:after {
-bottom: 0;
+    bottom: 0;
 }
-
-
-
 /*Servicios carousel*/
 .servicios {
     &.tablet-view {
@@ -414,7 +298,7 @@ bottom: 0;
 
     .carousel-item h3 {
         font-size: 24px;
-        color: #18097d;
+        color: $primary-color;
     }
 
     .carousel-item-inner {
@@ -608,7 +492,6 @@ bottom: 0;
     display: inline;
 }
 
-
 .contacto {
 
     .formulario {
@@ -666,7 +549,7 @@ textarea {
     padding: 5px;
 }
 .c_error {
-    color: #ef2626;
+    color: $danger-color;
 }
 #c_information p {
     padding-left: 0;
@@ -689,7 +572,7 @@ textarea {
         margin-top: 50px;
 
         a p {
-            color: #18097D;
+            color: $primary-color;
             font-weight: 700;
             margin-left: 8px;
             display: inline-block;
@@ -698,10 +581,7 @@ textarea {
                 color: #0f0686;
             }
         }
-
-
     }
-
     li {
         margin: 0 30px;
     }
@@ -715,6 +595,5 @@ textarea {
 .carousel-item {
     transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
 }
-
 
 @import 'responsive.scss';

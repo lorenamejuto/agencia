@@ -1,0 +1,49 @@
+.btn-primario {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background-color: #ff16aa;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 36px;
+    border-style: none;
+    padding: 13px 40px;
+
+    &:hover {
+    color: #fff;
+    background-color: #8a26e2;
+    }
+}
+
+.btn-wp, .btn-email {
+    position: fixed;
+    z-index: 9;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+.btn-wp {
+    top: 130px;
+    background-color: #00D369;
+    &:hover {
+        background-color: #04bd60;
+        }
+}
+
+.btn-email {
+top: 225px;
+background-color: #0F0596;
+}
+.btn-email:hover {
+background-color: #0f0686;
+}
+.btn-wp:hover, .btn-email:hover {
+-webkit-box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
+-moz-box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
+box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
+}

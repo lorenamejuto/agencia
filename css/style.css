@@ -1,4 +1,56 @@
 @charset "UTF-8";
+.btn-primario {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  background-color: #ff16aa;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 36px;
+  border-style: none;
+  padding: 13px 40px;
+}
+.btn-primario:hover {
+  color: #fff;
+  background-color: #8a26e2;
+}
+
+.btn-wp, .btn-email {
+  position: fixed;
+  z-index: 9;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.btn-wp {
+  top: 130px;
+  background-color: #00D369;
+}
+.btn-wp:hover {
+  background-color: #04bd60;
+}
+
+.btn-email {
+  top: 225px;
+  background-color: #0F0596;
+}
+
+.btn-email:hover {
+  background-color: #0f0686;
+}
+
+.btn-wp:hover, .btn-email:hover {
+  -webkit-box-shadow: 3px 3px 5px 0px #bdbdbd;
+  -moz-box-shadow: 3px 3px 5px 0px #bdbdbd;
+  box-shadow: 3px 3px 5px 0px #bdbdbd;
+}
+
 .full {
   padding: 0;
 }
@@ -237,61 +289,11 @@ footer nav a:hover {
 }
 
 /*Fin de footer*/
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  padding: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-
-input:focus, textarea:focus, button:focus, a:focus {
-  outline: none;
-}
-
-figure {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-span {
-  display: inline-block;
-}
-
-section {
-  background-color: #fff;
-}
-
-p {
-  line-height: 27px;
-}
-
-ul {
-  margin-bottom: 0;
-}
-
-/*Titulo main*/
 h1 {
   font-size: 65px;
   font-weight: 700;
@@ -327,7 +329,7 @@ h4 {
 h5 {
   font-size: 20px;
   font-weight: 700;
-  color: #18097d;
+  color: #18097D;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -340,22 +342,56 @@ hr {
   margin: 45px 0;
 }
 
-.btn-primario {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  background-color: #ff16aa;
-  display: inline-block;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 36px;
-  border-style: none;
-  padding: 13px 40px;
-}
-.btn-primario:hover {
-  color: #fff;
-  background-color: #8a26e2;
+p {
+  line-height: 27px;
 }
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+input:focus, textarea:focus, button:focus, a:focus {
+  outline: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+span {
+  display: inline-block;
+}
+
+section {
+  background-color: #fff;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+/*Titulo main*/
 .mobile-view, .tablet-view {
   display: none;
 }
@@ -365,44 +401,6 @@ hr {
   padding-top: 80px;
 }
 
-/*Boton flotante*/
-.btn-wp, .btn-email {
-  position: fixed;
-  z-index: 9;
-  right: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-}
-
-.btn-wp {
-  top: 130px;
-  background-color: #00D369;
-}
-.btn-wp:hover {
-  background-color: #04bd60;
-}
-
-.btn-email {
-  top: 225px;
-  background-color: #0F0596;
-}
-
-.btn-email:hover {
-  background-color: #0f0686;
-}
-
-.btn-wp:hover, .btn-email:hover {
-  -webkit-box-shadow: 3px 3px 5px 0px #bdbdbd;
-  -moz-box-shadow: 3px 3px 5px 0px #bdbdbd;
-  box-shadow: 3px 3px 5px 0px #bdbdbd;
-}
-
-/*Fin de Boton Flotante*/
 /*Main*/
 main {
   position: relative;
@@ -635,7 +633,7 @@ main > img {
 }
 .servicios .carousel-item h3 {
   font-size: 24px;
-  color: #18097d;
+  color: #18097D;
 }
 .servicios .carousel-item-inner {
   position: relative;
