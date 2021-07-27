@@ -33,32 +33,34 @@ header {
     margin-top: 23px;
     cursor: pointer;
 
-    &.open-menu {
-      margin-top: 33px;
-    }
-
     span {
       display: inline-block;
-      width: 26px;
-      height: 3px;
-      background-color: #fff;
-      margin-bottom: 6px;
-      transition: transform 0.4s;
-    
-      &:last-child {
-        width: 16px;
-        display: none;
-      }
+        width: 26px;
+        height: 3px;
+        background-color: #fff;
+        margin-bottom: 6px;
+        transition: transform 0.4s;
+    }
 
-      &:first-child {
-        transform: rotate(45deg);
-        position: absolute;
-        top: 0;
-      }
+    &.open-menu {
+      margin-top: 33px;
 
-      &:nth-child(2) {
-        transform: rotate(-45deg);
-      }
+      span {      
+        &:last-child {
+          width: 16px;
+          display: none;
+        }
+  
+        &:first-child {
+          transform: rotate(45deg);
+          position: absolute;
+          top: 0;
+        }
+  
+        &:nth-child(2) {
+          transform: rotate(-45deg);
+        }
+    }
 
     }
     
