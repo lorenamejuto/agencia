@@ -431,32 +431,23 @@ header {
   background-color: #000;
   z-index: 8;
 }
-
 header article {
   position: relative;
   padding: 15px 30px;
   z-index: 9;
   text-align: center;
 }
-
-header article > a img {
-  margin-left: 95px;
-}
-
 header .redes-sociales {
   float: right;
   margin-top: 18px;
   margin-right: 60px;
 }
-
 header .redes-sociales a {
   margin-left: 15px;
 }
-
 header .redes-sociales a:hover {
   opacity: 0.8;
 }
-
 header .boton-menu {
   position: relative;
   float: right;
@@ -465,7 +456,9 @@ header .boton-menu {
   margin-top: 23px;
   cursor: pointer;
 }
-
+header .boton-menu.open-menu {
+  margin-top: 33px;
+}
 header .boton-menu span {
   display: inline-block;
   width: 26px;
@@ -474,27 +467,21 @@ header .boton-menu span {
   margin-bottom: 6px;
   transition: transform 0.4s;
 }
-
 header .boton-menu span:last-child {
   width: 16px;
+  display: none;
 }
-
-header .boton-menu.open-menu {
-  margin-top: 33px;
-}
-
-.open-menu span:first-child {
+header .boton-menu span:first-child {
   transform: rotate(45deg);
   position: absolute;
   top: 0;
 }
-
-.open-menu span:nth-child(2) {
+header .boton-menu span:nth-child(2) {
   transform: rotate(-45deg);
 }
 
-.open-menu span:last-child {
-  display: none;
+header article > a img {
+  margin-left: 95px;
 }
 
 header nav {
@@ -507,7 +494,6 @@ header nav {
   right: 0;
   top: 96px;
 }
-
 header nav li {
   width: 350px;
   border-bottom: 1px solid #707070;
@@ -516,16 +502,13 @@ header nav li {
   font-size: 23px;
   letter-spacing: 1.6px;
 }
-
 header nav li:last-child {
   border-bottom: 0;
 }
-
 header nav a {
   color: #fff;
   font-weight: 700;
 }
-
 header nav a:hover {
   color: #090a85;
 }
@@ -541,20 +524,17 @@ footer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 footer article {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 footer nav a {
   color: #FF0088;
   letter-spacing: 1.2px;
   font-weight: 600;
   margin-left: 40px;
 }
-
 footer nav a:hover {
   color: #da0a8e;
 }
@@ -821,7 +801,12 @@ main > img {
 .servicios h2 {
   color: #fff;
 }
-.servicios .servicios article h3 {
+.servicios h2 + hr {
+  background-color: #fff;
+  margin: 45px auto;
+  display: block;
+}
+.servicios article h3 {
   font-size: 20px;
 }
 .servicios aside h3 {
@@ -841,12 +826,6 @@ main > img {
   z-index: 3;
 }
 
-.servicios h2 + hr {
-  background-color: #fff;
-  margin: 45px auto;
-  display: block;
-}
-
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: #fff;
   font-weight: 700;
@@ -862,7 +841,6 @@ main > img {
 .nav-tabs .nav-link {
   border: 0;
 }
-
 .nav-tabs .nav-item {
   margin-bottom: 0px;
   text-align: center;
@@ -1212,27 +1190,23 @@ textarea {
   text-align: center;
   padding: 120px 0;
 }
-
 .instagram-carousel ul {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
 }
-
-.instagram-carousel li {
-  margin: 0 30px;
-}
-
 .instagram-carousel ul a p {
   color: #18097D;
   font-weight: 700;
   margin-left: 8px;
   display: inline-block;
 }
-
-.instagram-carousel ul a p:hover {
+.instagram-carousel ul a phover {
   color: #0f0686;
+}
+.instagram-carousel li {
+  margin: 0 30px;
 }
 
 /*Fin de Carousel Instagram*/

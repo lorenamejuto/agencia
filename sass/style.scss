@@ -265,9 +265,15 @@ z-index: 5;
 .servicios {
     h2 {
         color: #fff;
+
+        + hr {
+            background-color: #fff;
+            margin: 45px auto;
+            display: block;
+        }
     }
 
-    .servicios article h3 {
+    article h3 {
         font-size: 20px;
     }
     
@@ -289,11 +295,7 @@ z-index: 5;
     z-index: 3;
 }
 
-.servicios h2 + hr {
-    background-color: #fff;
-    margin: 45px auto;
-    display: block;
-}
+
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #fff;
@@ -305,14 +307,19 @@ z-index: 5;
     font-weight: 700;
     letter-spacing: 2px;
 }
-.nav-tabs .nav-link {
-    border: 0;
-}
-.nav-tabs .nav-item {
-    margin-bottom: 0px;
-    text-align: center;
-    letter-spacing: 2px;
-}
+.nav-tabs {
+    .nav-link {
+        border: 0;
+    }    
+
+    .nav-item {
+        margin-bottom: 0px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+} 
+
 .tab-content, .cuadro-servicios {
     min-height: 450px;
     background-color: #fff;
@@ -467,16 +474,8 @@ bottom: 0;
         p {
             max-width: 400px;
             }
-
     } 
-    
-    
-    
-    
 } 
-
-
-
 
 .servicios.tablet-view > img {
     max-width: inherit;
@@ -606,7 +605,7 @@ bottom: 0;
 }
 
 .datos div img, .datos div a, .datos div p {
-display: inline;
+    display: inline;
 }
 
 
@@ -682,24 +681,30 @@ textarea {
 .instagram-carousel {
     text-align: center;
     padding: 120px 0;
-}
-.instagram-carousel ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
-.instagram-carousel li {
-    margin: 0 30px;
-}
-.instagram-carousel ul a p {
-    color: #18097D;
-    font-weight: 700;
-    margin-left: 8px;
-    display: inline-block;
-}
-.instagram-carousel ul a p:hover {
-    color: #0f0686;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+
+        a p {
+            color: #18097D;
+            font-weight: 700;
+            margin-left: 8px;
+            display: inline-block;
+
+            &hover {
+                color: #0f0686;
+            }
+        }
+
+
+    }
+
+    li {
+        margin: 0 30px;
+    }
 }
 /*Fin de Carousel Instagram*/
 
