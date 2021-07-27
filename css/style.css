@@ -582,7 +582,6 @@ body {
 a {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
@@ -675,7 +674,6 @@ hr {
   border-style: none;
   padding: 13px 40px;
 }
-
 .btn-primario:hover {
   color: #fff;
   background-color: #8a26e2;
@@ -708,7 +706,6 @@ hr {
   top: 130px;
   background-color: #00D369;
 }
-
 .btn-wp:hover {
   background-color: #04bd60;
 }
@@ -736,6 +733,15 @@ main {
   background: url(../images/main-fondo.jpg) no-repeat fixed;
   background-size: 100% 100%;
 }
+main article {
+  position: relative;
+  z-index: 6;
+  color: #fff;
+}
+main p {
+  margin-bottom: 40px;
+  max-width: 570px;
+}
 
 main > img {
   width: 100%;
@@ -743,17 +749,6 @@ main > img {
   bottom: -8px;
   left: 0;
   z-index: 5;
-}
-
-main article {
-  position: relative;
-  z-index: 6;
-  color: #fff;
-}
-
-main p {
-  margin-bottom: 40px;
-  max-width: 570px;
 }
 
 /*Fin Main*/
@@ -767,7 +762,6 @@ main p {
 .nosotros {
   padding-top: 120px;
 }
-
 .nosotros .container {
   text-align: center;
 }
@@ -776,7 +770,6 @@ main p {
   display: flex;
   justify-content: flex-end;
 }
-
 .mision article {
   width: 50%;
   max-width: 570px;
@@ -786,7 +779,6 @@ main p {
   align-items: center;
   box-sizing: border-box;
 }
-
 .mision aside {
   width: 50%;
   background-image: url(../images/mision.jpg);
@@ -799,7 +791,6 @@ main p {
   display: flex;
   justify-content: flex-start;
 }
-
 .vision aside {
   width: 50%;
   background-image: url(../images/vision.jpg);
@@ -807,7 +798,6 @@ main p {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .vision article {
   width: 50%;
   max-width: 570px;
@@ -828,8 +818,20 @@ main p {
   background: linear-gradient(180deg, #e75821 0%, #e10b6f 100%);
 }
 
+.servicios h2 {
+  color: #fff;
+}
+.servicios .servicios article h3 {
+  font-size: 20px;
+}
 .servicios aside h3 {
   font-size: 28px;
+}
+.servicios .nav-tabs {
+  display: flex;
+  border-bottom: 0;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .servicios > img {
@@ -839,21 +841,10 @@ main p {
   z-index: 3;
 }
 
-.servicios h2 {
-  color: #fff;
-}
-
 .servicios h2 + hr {
   background-color: #fff;
   margin: 45px auto;
   display: block;
-}
-
-.servicios .nav-tabs {
-  display: flex;
-  border-bottom: 0;
-  justify-content: space-around;
-  align-items: flex-start;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -896,17 +887,14 @@ main p {
   box-shadow: 0px 3px 5px 3px rgba(18, 17, 18, 0.48);
   z-index: 6;
 }
-
 .cuadro-servicios hr {
   margin: 20px 0;
 }
-
 .cuadro-servicios aside {
   width: 40%;
   padding: 40px 45px 15px 45px;
   position: relative;
 }
-
 .cuadro-servicios aside:before {
   content: "";
   position: absolute;
@@ -916,21 +904,36 @@ main p {
   width: 1px;
   background-color: #e0dfdf;
 }
-
 .cuadro-servicios aside img {
   padding-bottom: 10px;
 }
-
 .cuadro-servicios article {
   width: 60%;
   padding: 40px 45px 40px 45px;
 }
-
 .cuadro-servicios ul {
   position: relative;
   border-left: 2px solid #ff16aa;
   background-color: white;
   margin: 40px 0px;
+}
+.cuadro-servicios li {
+  position: relative;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+.cuadro-servicios li:last-child {
+  padding-bottom: 0;
+}
+.cuadro-servicios li:after {
+  position: absolute;
+  top: 6px;
+  left: -6px;
+  border-radius: 50%;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ff16aa;
 }
 
 .cuadro-servicios ul:after, .cuadro-servicios ul:before {
@@ -950,35 +953,64 @@ main p {
   bottom: 0;
 }
 
-.cuadro-servicios li {
-  position: relative;
-  padding-left: 15px;
-  padding-bottom: 15px;
-}
-
-.cuadro-servicios li:last-child {
-  padding-bottom: 0;
-}
-
-.cuadro-servicios li:after {
-  position: absolute;
-  top: 6px;
-  left: -6px;
-  border-radius: 50%;
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #ff16aa;
-}
-
-.servicios article h3 {
-  font-size: 20px;
-}
-
 /*Servicios carousel*/
 .servicios.tablet-view {
   position: relative;
   overflow: hidden;
+}
+.servicios .carousel-item h3 {
+  font-size: 24px;
+  color: #18097d;
+}
+.servicios .carousel-item-inner {
+  position: relative;
+  z-index: 5;
+  background-color: #fff;
+  padding: 50px 20px 20px 20px;
+  height: 520px;
+  -webkit-box-shadow: 0 3px 5px 3px rgba(18, 17, 18, 0.48);
+  -moz-box-shadow: 0 3px 5px 3px rgba(18, 17, 18, 0.48);
+  box-shadow: 0 3px 5px 3px rgba(18, 17, 18, 0.48);
+}
+.servicios .carousel-item {
+  padding: 208px 20px 20px 20px;
+  box-sizing: border-box;
+}
+.servicios .carousel-item01 {
+  background: #e75821;
+  background: linear-gradient(180deg, #e75821 0%, #e10b6f 100%);
+}
+.servicios .carousel-item02 {
+  background: #c2057b;
+  background: linear-gradient(180deg, #c2057b 0%, #621c7f 100%);
+}
+.servicios .carousel-item03 {
+  background: #3a61ab;
+  background: linear-gradient(180deg, #3a61ab 0%, #2a2381 100%);
+}
+.servicios .carousel-item04 {
+  background: #d228a6;
+  background: linear-gradient(180deg, #d228a6 0%, #1f5daa 100%);
+}
+.servicios .carousel-item05 {
+  background: #b6ce0c;
+  background: linear-gradient(180deg, #b6ce0c 0%, #009c41 100%);
+}
+.servicios .carousel-item .btn-primario {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.servicios .carousel-item ul {
+  padding-bottom: 20px;
+}
+.servicios .carousel-item li {
+  position: relative;
+  padding-bottom: 10px;
+}
+.servicios .carousel-item p {
+  max-width: 400px;
 }
 
 .servicios.tablet-view > img {
@@ -992,72 +1024,6 @@ main p {
   left: 50%;
   transform: translateX(-50%);
   z-index: 7;
-}
-
-.servicios .carousel-item h3 {
-  font-size: 24px;
-  color: #18097d;
-}
-
-.servicios .carousel-item-inner {
-  position: relative;
-  z-index: 5;
-  background-color: #fff;
-  padding: 50px 20px 20px 20px;
-  height: 520px;
-  -webkit-box-shadow: 0 3px 5px 3px rgba(18, 17, 18, 0.48);
-  -moz-box-shadow: 0 3px 5px 3px rgba(18, 17, 18, 0.48);
-  box-shadow: 0 3px 5px 3px rgba(18, 17, 18, 0.48);
-}
-
-.servicios .carousel-item {
-  padding: 208px 20px 20px 20px;
-  box-sizing: border-box;
-}
-
-.servicios .carousel-item01 {
-  background: #e75821;
-  background: linear-gradient(180deg, #e75821 0%, #e10b6f 100%);
-}
-
-.servicios .carousel-item02 {
-  background: #c2057b;
-  background: linear-gradient(180deg, #c2057b 0%, #621c7f 100%);
-}
-
-.servicios .carousel-item03 {
-  background: #3a61ab;
-  background: linear-gradient(180deg, #3a61ab 0%, #2a2381 100%);
-}
-
-.servicios .carousel-item04 {
-  background: #d228a6;
-  background: linear-gradient(180deg, #d228a6 0%, #1f5daa 100%);
-}
-
-.servicios .carousel-item05 {
-  background: #b6ce0c;
-  background: linear-gradient(180deg, #b6ce0c 0%, #009c41 100%);
-}
-
-.servicios .carousel-item .btn-primario {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.servicios .carousel-item ul {
-  padding-bottom: 20px;
-}
-
-.servicios .carousel-item li {
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.servicios .carousel-item p {
-  max-width: 400px;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -1084,7 +1050,6 @@ main p {
 #portfolio .imagenes li {
   transition: transform 1s;
 }
-
 #portfolio .imagenes li:hover {
   transform: scale(1.05);
 }
@@ -1101,17 +1066,14 @@ main p {
   justify-content: center;
   align-items: center;
 }
-
 .clientes div {
   padding-bottom: 30px;
 }
-
 .clientes img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   padding: 10px 65px;
 }
-
 .clientes img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
@@ -1140,47 +1102,39 @@ main p {
   color: #fff;
   padding-bottom: 50px;
 }
-
-.contacto a {
-  color: #fff;
-}
-
-.contacto a:hover {
-  color: #fff;
-  font-weight: 700;
-}
-
 .contacto h2 {
   color: #fff;
 }
-
 .contacto hr {
   background-color: #fff;
   margin-bottom: 60px;
 }
-
+.contacto a {
+  color: #fff;
+}
+.contacto ahover {
+  color: #fff;
+  font-weight: 700;
+}
 .contacto .datos {
   text-align: left;
   padding-left: 100px;
 }
-
-.datos div img, .datos div a, .datos div p {
-  display: inline;
-}
-
-.datos div img {
-  padding-right: 45px;
-}
-
-.datos div {
+.contacto .datos div {
   padding: 40px 30px 40px 0;
   border-bottom: 1px solid #fff;
   margin-right: 50px;
   box-sizing: border-box;
 }
-
-.datos div:last-child {
+.contacto .datos div:last-child {
   border-bottom: none;
+}
+.contacto .datos div img {
+  padding-right: 45px;
+}
+
+.datos div img, .datos div a, .datos div p {
+  display: inline;
 }
 
 .contacto .formulario {
@@ -1188,7 +1142,6 @@ main p {
   position: relative;
   padding-top: 0;
 }
-
 .contacto .formulario:before {
   content: "";
   position: absolute;
@@ -1198,8 +1151,7 @@ main p {
   width: 1px;
   background-color: #fff;
 }
-
-.formulario p {
+.contacto .formulario p {
   padding-left: 50px;
 }
 
