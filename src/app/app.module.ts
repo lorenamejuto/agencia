@@ -9,6 +9,7 @@ import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
+import { RedesComponent } from './components/redes/redes.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ClientesComponent } from './components/clientes/clientes.component';
     QuienesSomosComponent,
     ServiciosComponent,
     PortafolioComponent,
-    ClientesComponent
+    ClientesComponent,
+    RedesComponent
   ],
   imports: [
     BrowserModule,
