@@ -1,0 +1,23 @@
+footer {
+	background-color: #000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav a {
+    color: #FF0088;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    margin-left: 40px;
+
+    &:hover {
+      color: #da0a8e;
+    }
+  }
+
+}
