@@ -1,0 +1,43 @@
+@import 'assets/sass/utils/buttons.scss';
+@import 'assets/sass/portfolio.scss';
+@import 'assets/sass/utils/variables.scss';
+@import 'assets/sass/utils/text.scss';
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+input:focus, textarea:focus, button:focus, a:focus {
+    outline: none;
+}
+
+figure {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+
+span {
+    display: inline-block;
+}
+
+section {
+    background-color: #fff;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
