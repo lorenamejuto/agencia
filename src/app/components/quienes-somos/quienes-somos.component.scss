@@ -1,0 +1,59 @@
+.texto-nosotros {
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.nosotros {
+    padding-top: 120px;
+
+    .container {
+        text-align: center;
+    }
+}
+
+.mision {
+    display: flex;
+    justify-content: flex-end;
+
+    article {
+        width: 50%;
+        max-width: 570px;
+        padding: 130px 80px 200px 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        box-sizing: border-box;
+        }
+
+    aside {
+        width: 50%;
+        background-image: url(../../../assets/images/mision.jpg);
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+}
+
+.vision {
+    display: flex;
+    justify-content: flex-start;
+
+    aside {
+        width: 50%;
+        background-image: url(../../../assets/images/vision.jpg);
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+
+    article {
+        width: 50%;
+        max-width: 570px;
+        padding: 130px 20px 200px 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        }
+}
+
