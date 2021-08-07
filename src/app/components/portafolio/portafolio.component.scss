@@ -118,3 +118,13 @@
 .portfolio-contenido aside img {
     margin: 0;
   }
+/*Sección portfolio*/
+#portfolio .imagenes li {
+    transition: transform 1s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+/*Fin de seccion portfolio*/

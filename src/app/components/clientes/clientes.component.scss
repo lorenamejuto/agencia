@@ -1,0 +1,27 @@
+/*Sección Nuestrosclientes*/
+.nuestros-clientes {
+    padding-top: 130px;
+    text-align: center;
+}
+.clientes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        padding-bottom: 30px;
+    }
+
+    img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        padding: 10px 65px;
+    
+        &:hover {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+        }
+    }
+}
+
+/*Fin de Sección nuestros clientes*/
