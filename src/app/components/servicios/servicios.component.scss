@@ -149,17 +149,8 @@ left: -2px;
 }
 /*Servicios carousel*/
 .servicios {
-    &.tablet-view {
-        position: relative;
-        overflow: hidden;
-    }
 
-    .carousel-item h3 {
-        font-size: 24px;
-        color: $primary-color;
-    }
-
-    .carousel-item-inner {
+    .servicio-item-inner {
         position: relative;
         z-index: 5;
         background-color: #fff;
@@ -170,9 +161,14 @@ left: -2px;
         box-shadow: 0 3px 5px 3px rgba(18,17,18,0.48);
     }
 
-    .carousel-item {
+    .servicio-item {
         padding: 208px 20px 20px 20px;
         box-sizing: border-box;
+
+        h3 {
+            font-size: 24px;
+            color: $primary-color;
+        }
     }
 
     .carousel-item01 {
@@ -199,7 +195,7 @@ left: -2px;
         background: rgb(182,206,12);
         background: linear-gradient(180deg, rgba(182,206,12,1) 0%, rgba(0,156,65,1) 100%);
     }
-    .carousel-item {
+    .servicio-item {
         .btn-primario {
             position: absolute;
             bottom: 40px;

@@ -1,4 +1,4 @@
-/*Titulo main*/
+@import '../../../assets/sass/variables.scss';
 
 .mobile-view, .tablet-view {
     display: none;
@@ -9,13 +9,36 @@
     padding-top: 80px;
 }
 
-/*Main*/
 main {
     position: relative;
     padding-top: 196px;
     background: url(../../../assets/images/main-fondo.jpg) no-repeat fixed;
     background-size: 100% 100%;
 
+    @media (max-width: $desktop) {
+        background-size: cover;
+    }
+    @media (max-width: $phone) {
+        text-align: center;
+    }
+    @media (max-width: $small-phone) {
+        overflow: hidden;
+        background: rgb(147,6,161);
+        background: linear-gradient(180deg, rgba(147,6,161,1) 0%, rgba(26,9,136,1) 100%);
+        
+        > img {
+            left: -160px;
+            width: 745px;
+            max-width: inherit;
+          }
+    }
+    
+    .celular {
+        @media (max-width: $tablet) {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
     article {
         position: relative;
         z-index: 6;

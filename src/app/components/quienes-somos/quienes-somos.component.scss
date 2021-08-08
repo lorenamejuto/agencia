@@ -1,3 +1,4 @@
+@import '../../../assets/sass/variables.scss';
 .texto-nosotros {
     max-width: 700px;
     text-align: center;
@@ -6,14 +7,29 @@
 .nosotros {
     padding-top: 120px;
 
+    @media (max-width: $phone) {
+        margin-bottom: 40px;
+    }
+
     .container {
         text-align: center;
     }
-}
 
-.mision {
-    display: flex;
-    justify-content: flex-end;
+    aside {
+        width: 50%;
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (max-width: $phone) {
+            position: absolute;
+            top: 95px;
+            left: 20px;
+            width: calc(100% - 40px);
+            height: 217px;
+            box-sizing: border-box;
+        }
+    }
 
     article {
         width: 50%;
@@ -23,37 +39,46 @@
         justify-content: flex-end;
         align-items: center;
         box-sizing: border-box;
+
+        @media (max-width: $phone) {
+            width: 100%;
+            padding: 0 20px 60px 20px;;
+            text-align: center;
+            p {
+                margin-top:  250px;
+              }
+        }
+    }
+    
+    .mision {
+        display: flex;
+        justify-content: flex-end;
+
+        @media (max-width: $phone) {
+            position: relative;
+            justify-content: center;
         }
 
-    aside {
-        width: 50%;
-        background-image: url(../../../assets/images/mision.jpg);
-        background-position: center top;
-        background-size: cover;
-        background-repeat: no-repeat;
-        }
-}
+        aside {
+            background-image: url(../../../assets/images/mision.jpg);
+            }
+    }
 
-.vision {
-    display: flex;
-    justify-content: flex-start;
-
-    aside {
-        width: 50%;
-        background-image: url(../../../assets/images/vision.jpg);
-        background-position: center top;
-        background-size: cover;
-        background-repeat: no-repeat;
-        }
-
-    article {
-        width: 50%;
-        max-width: 570px;
-        padding: 130px 20px 200px 80px;
+    .vision {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
-        box-sizing: border-box;
+
+        @media (max-width: $phone) {
+            position: relative;
+            justify-content: center;
         }
+
+        aside {
+            background-image: url(../../../assets/images/vision.jpg);
+            }
+    }
 }
+
+
+
 
